@@ -1,6 +1,9 @@
 from django.views.generic import TemplateView
 from django.views.generic import FormView
 
+#Add this line to avoid NameError: name 'NameForm' is not defined
+from .forms import NameForm
+
 class FillOut(FormView):
     template_name = "form.html"
     form_class = NameForm
