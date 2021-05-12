@@ -26,7 +26,7 @@ urlpatterns = [
     path('up/<int:pk>/', UpVoteView.as_view()),
     url('form', FillOut.as_view() ),
     url('aboutus', AboutUs.as_view() ),
-    # url('', Home.as_view() ),
+    url('', Home.as_view() ),
 
     # FACE BOOK MAKING A POST
 
