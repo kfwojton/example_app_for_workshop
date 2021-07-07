@@ -8,6 +8,9 @@ from django.views.generic import ListView
 
 
 
+#Add this line to avoid NameError: name 'NameForm' is not defined
+from .forms import NameForm
+
 class FillOut(FormView):
     template_name = "form.html"
     form_class = NameForm
